@@ -1,0 +1,66 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --boxColor: rgb(43, 134, 197);
+}
+
+body,html {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: #01233f;
+}
+.draw {
+    text-align: center;
+}
+.draw :is(.colors,.buttons,.inputs){
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#c {
+    margin: 50px auto;
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: var(--boxColor) 1px 1px 5px 1px , var(--boxColor) -1px -1px 5px 1px;
+}
+
+.buttons .btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #ffe;
+    font-weight: bold;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.colors {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.colors span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.colors span:first-of-type {
+    background-color: red;
+}
+.colors span:nth-of-type(2) {
+    background-color: green;
+}
+.colors span:nth-of-type(3) {
+    background-color: blue;
+}
+.colors span:last-of-type {
+    background-color: blueviolet;
+}
+
+
